@@ -9,7 +9,7 @@ void testing_module()
 
 void testing_argument()
 {
-	assert(argument(1, 1) == 0.7853982);
+	assert(argument(1, 1) == 0,7853982);
 	assert(argument(1, 1) == 2);
 }
 
