@@ -22,9 +22,7 @@ int check_int(int n)
 
 int maths(int k)
 {
-	int length = 0, a = 0, number = 0;				// length - ���������� ��� ����� ���� ����� ����� �� �������
-										// � - ����� �� ������������������ 123456...
-										// number - ����������, � ������� ����� ���������� ��������� �����
+	int length = 0, a = 0, number = 0;				
 	while (length < k)
 	{
 		a++;
