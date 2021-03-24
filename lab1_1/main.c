@@ -12,7 +12,7 @@ int check_int(int n)
 		if (result_of_scan != 2 || ch != '\n')
 		{
 			while (getchar() != '\n');
-			printf("������������ ����, ���������� ��� ���: \n");
+			printf("Invalid input, try again: \n");
 		}
 		else
 			break;
@@ -49,11 +49,10 @@ int maths(int k)
 
 int main()
 {
-	setlocale(LC_ALL, "ru");
-	printf("������� ����� ����� � ������������������: ");
+	printf("Enter the number of the dijit in sequence: ");
 	int k = 0;
 	k = check_int(k);
 	int number = maths(k);
-	printf("����� �����: %d", number % 10);
+	printf("the digit: %d", number % 10);
 	return 0;
 }
