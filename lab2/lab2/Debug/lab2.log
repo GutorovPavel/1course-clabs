@@ -1,0 +1,3 @@
+﻿  test.c
+test.obj : error LNK2005: _main уже определен в main.obj
+E:\VISUAL C\lab2\Debug\lab2.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
