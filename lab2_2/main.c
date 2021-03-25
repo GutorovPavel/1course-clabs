@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void check_int(float x)
+void check_float(float x)
 {
 	int result_of_scan = 0;
 	char ch;
@@ -38,10 +38,10 @@ int main()
 	int n;
 
 	printf("Enter x: ");
-	check_int(x);
+	check_float(x);
 
 	printf("Enter accuracy: ");
-	check_int(e);
+	check_float(e);
 	
 	n = Number(x, e);
 	printf("%d\n", n);
