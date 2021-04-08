@@ -55,8 +55,20 @@ int main()
     printf("\n");
 
     int** map = (int**)malloc(n * sizeof(int*));
-    for (int i = 0; i < n; i++)
+    if (map == NULL) 
+    {
+        return 0;
+    }
+    for (int i = 0; i < n; i++) {
         map[i] = (int*)malloc(m * sizeof(int));
+        if (map[i] == NULL) 
+        {
+            for (int j = 0; j < i; j++) free(map[j]);
+            free(map);
+            return 1;
+        } 
+    }
+    
 
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++)
