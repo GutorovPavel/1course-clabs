@@ -4,11 +4,29 @@
 #include <time.h>
 #include <stdbool.h>
 
-void Input(int &n, int &m)
+void CheckInt(int& n)
+{
+    int result_of_scan = 0;
+    char ch;
+    while (1)
+    {
+        result_of_scan = scanf_s("%d%c", &n, &ch);
+        if (result_of_scan != 2 || ch != '\n')
+        {
+            while (getchar() != '\n');
+            printf("Invalid input, try again: \n");
+        }
+        else
+            break;
+    }
+};
+
+void Input(int& n, int& m)
 {
     printf("Input the map size:\n");
-    scanf_s("%d", &n);
-    scanf_s("%d", &m);
+    CheckInt(n);
+    CheckInt(m);
+
     if (n < 5 && m < 5)
     {
         printf("Invalid input, one of ur input should be >= 5\n");
