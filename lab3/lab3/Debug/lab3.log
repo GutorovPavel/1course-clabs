@@ -1,0 +1,15 @@
+﻿  lab3.cpp
+E:\VISUAL C\lab3\lab3\lab3.cpp(32,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\VISUAL C\lab3\lab3\lab3.cpp(28): warning C4715: CheckSize: значение возвращается не при всех путях выполнения
+  main.c
+E:\VISUAL C\lab3\lab3\main.c(7,15): error C2143: синтаксическая ошибка: отсутствие ")" перед "&"
+E:\VISUAL C\lab3\lab3\main.c(7,15): error C2143: синтаксическая ошибка: отсутствие "{" перед "&"
+E:\VISUAL C\lab3\lab3\main.c(7,15): error C2059: синтаксическая ошибка: &
+E:\VISUAL C\lab3\lab3\main.c(7,26): error C2059: синтаксическая ошибка: )
+E:\VISUAL C\lab3\lab3\main.c(20,18): error C2143: синтаксическая ошибка: отсутствие ")" перед "&"
+E:\VISUAL C\lab3\lab3\main.c(20,18): error C2143: синтаксическая ошибка: отсутствие "{" перед "&"
+E:\VISUAL C\lab3\lab3\main.c(20,18): error C2059: синтаксическая ошибка: &
+E:\VISUAL C\lab3\lab3\main.c(20,41): error C2059: синтаксическая ошибка: )
+E:\VISUAL C\lab3\lab3\main.c(32,21): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\VISUAL C\lab3\lab3\main.c(34,10): warning C4013: Input: нет определения; предполагается "extern" с возвратом типа "int"
+E:\VISUAL C\lab3\lab3\main.c(35,14): warning C4013: CheckSize: нет определения; предполагается "extern" с возвратом типа "int"
