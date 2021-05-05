@@ -1,0 +1,10 @@
+﻿  main.c
+E:\VISUAL C\lab4_2\lab4_2\main.c(52,35): warning C4013: StrLen: нет определения; предполагается "extern" с возвратом типа "int"
+E:\VISUAL C\lab4_2\lab4_2\main.c(99,32): warning C4013: Compare: нет определения; предполагается "extern" с возвратом типа "int"
+E:\VISUAL C\lab4_2\lab4_2\main.c(105,42): warning C4013: DelSym: нет определения; предполагается "extern" с возвратом типа "int"
+E:\VISUAL C\lab4_2\lab4_2\main.c(105,60): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+E:\VISUAL C\lab4_2\lab4_2\main.c(12,9): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\VISUAL C\lab4_2\lab4_2\main.c(68,13): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\VISUAL C\lab4_2\lab4_2\main.c(159,7): error C2040: DelSym: "char *(char *,int,int)" отличается по уровням косвенного обращения от "int ()"
+E:\VISUAL C\lab4_2\lab4_2\main.c(189,13): warning C4013: exit: нет определения; предполагается "extern" с возвратом типа "int"
+E:\VISUAL C\lab4_2\lab4_2\main.c(224,6): error C2371: Compare: переопределение; различные базовые типы
