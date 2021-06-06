@@ -337,6 +337,7 @@ public:
 				{
 				case 1: { isMenu = false; menuStart = false; GameStart(window); break; }
 				case 2: { exit(0); break; }
+				default: { continue; }
 				}
 			}
 
@@ -375,12 +376,12 @@ public:
 			choice = 0;
 			sRestart.setColor(Color::White);
 			sExit.setColor(Color::White);
-			if (IntRect(200, 460, 600, 50).contains(Mouse::getPosition(window)))
+			if (IntRect(0, 0, 1000, 490).contains(Mouse::getPosition(window)))
 			{
 				sRestart.setColor(Color::Green);
 				choice = 1;
 			}
-			if (IntRect(200, 520, 600, 50).contains(Mouse::getPosition(window)))
+			if (IntRect(0, 520, 1000, 1000).contains(Mouse::getPosition(window)))
 			{
 				sExit.setColor(Color::Green);
 				choice = 2;
@@ -391,10 +392,9 @@ public:
 				{
 				case 1: { isMenu = false; GameStart(window); window.setMouseCursorVisible(false); break; }
 				case 2: { isMenu = false; menuStart = true;  Menu(window); break; }
+				default: { continue; }
 				}
 			}
-			if (Keyboard::isKeyPressed(Keyboard::Enter))
-				isMenu = false;
 
 			window.draw(sBackground);
 			window.draw(sRestart);
@@ -431,12 +431,12 @@ public:
 			choice = 0;
 			sRestart.setColor(Color::White);
 			sExit.setColor(Color::White);
-			if (IntRect(200, 460, 600, 50).contains(Mouse::getPosition(window)))
+			if (IntRect(0, 0, 1000, 490).contains(Mouse::getPosition(window)))
 			{
 				sRestart.setColor(Color::Green);
 				choice = 1;
 			}
-			if (IntRect(200, 520, 600, 50).contains(Mouse::getPosition(window)))
+			if (IntRect(0, 520, 1000, 1000).contains(Mouse::getPosition(window)))
 			{
 				sExit.setColor(Color::Green);
 				choice = 2;
@@ -447,6 +447,7 @@ public:
 				{
 				case 1: { isMenu = false; GameStart(window); window.setMouseCursorVisible(false); break; }
 				case 2: { isMenu = false; menuStart = true;  Menu(window); break; }
+				default: { continue; }
 				}
 			}
 			window.draw(sBackground);
@@ -505,6 +506,7 @@ public:
 				{
 				case 1: { isMenu = false; GameStart(window); window.setMouseCursorVisible(false); break; }
 				case 2: { isMenu = false; menuStart = true;  Menu(window); break; }
+				default: { continue; }
 				}
 			}
 			window.draw(sBackground);
@@ -579,6 +581,7 @@ public:
 				case 2: { isMenu = false; return "map2.tmx"; break; }
 				case 3: { isMenu = false; return "map3.tmx"; break; }
 				case 4: { isMenu = false; return "map4.tmx"; break; }
+				default: { continue; }
 				}
 			}
 			window.draw(sBackground);
